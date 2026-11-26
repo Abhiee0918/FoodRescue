@@ -1,6 +1,6 @@
 import { User, Donation, ImpactStats, Notification, HeatmapZone, DemandPrediction, LiveInsight } from '../types';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5000/api';
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://foodrescue-8yh2.onrender.com/';
 
 const getHeaders = () => {
   const token = localStorage.getItem('fra_token');
