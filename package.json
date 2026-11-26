@@ -1,0 +1,27 @@
+{
+  "name": "foodrescue-ai",
+  "version": "1.0.0",
+  "description": "AI-powered food surplus rescue and donation platform connecting restaurants, NGOs, and volunteers in real time.",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "concurrently -k \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "server": "node server/server.js",
+    "client": "cd client && npm run dev",
+    "check:server": "node --check server/server.js && node --check server/middleware/auth.js && node --check server/services/firebaseService.js"
+  },
+  "keywords": [
+    "food-rescue",
+    "ai",
+    "zero-waste",
+    "haccp",
+    "sustainability",
+    "charity",
+    "real-time"
+  ],
+  "author": "FoodRescue AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
