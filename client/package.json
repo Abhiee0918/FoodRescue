@@ -37,8 +37,5 @@
     "oxlint": "^1.81.0",
     "typescript": "~6.0.2",
     "vite": "^5.4.21"
-  },
-  "overrides": {
-    "esbuild": "0.25.0"
   }
 }
